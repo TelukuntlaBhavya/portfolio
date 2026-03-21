@@ -1,0 +1,61 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    background: #020617;
+    @apply font-inter antialiased;
+  }
+  
+  body {
+    @apply leading-relaxed;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-poppins tracking-tight;
+  }
+}
+
+@layer utilities {
+  .bg-navy-gradient {
+    background: linear-gradient(135deg, #020617 0%, #0f172a 50%, #020617 100%);
+  }
+
+  .glass {
+    @apply bg-[#0f172a]/70 backdrop-blur-lg border border-white/10 shadow-2xl;
+  }
+  
+  .glass-card {
+    @apply glass rounded-2xl p-6 transition-all duration-300 hover:shadow-primary-light/10 hover:-translate-y-1;
+  }
+  
+  .text-gradient {
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-purple-500;
+  }
+
+  /* Force standard dark mode styles */
+  .dark-full {
+    background-color: #020617;
+    color: white;
+  }
+}
+
+/* Custom Scrollbar for Navy Dark Theme */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #020617;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #1e293b;
+  border-radius: 999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #334155;
+}
