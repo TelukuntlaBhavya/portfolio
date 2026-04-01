@@ -65,8 +65,8 @@ npm run build
 
 ## 📬 Contact
 
-* 📧 Email: [your-email@example.com](mailto:your-email@example.com)
-* 💼 LinkedIn: your-linkedin-link
+* 📧 Email: siripurambhavya10@gmail.com
+* 💼 LinkedIn: https://www.linkedin.com/in/telukuntla-bhavya/
 
 ---
 
